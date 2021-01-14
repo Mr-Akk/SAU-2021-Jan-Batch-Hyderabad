@@ -1,0 +1,235 @@
+a {
+  color: #35e888;
+  border-bottom: yellow;
+}
+
+a:hover {
+  color: #35e888;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.aboutbody {
+  background-color: rgb(6, 6, 6);
+}
+
+.nav-about {
+  margin-top: 15px;
+}
+
+.nav-about ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-about li + li {
+  margin-left: 30px;
+}
+
+.nav-about a {
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.nav-about a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: rgb(252, 220, 56);
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-about a:hover:before,
+.nav-about li:hover > a:before,
+.nav-about .active > a:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.nav-about a:hover,
+.nav-about .active > a,
+.nav-about li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgb(255, 206, 82);
+  margin: 4px 10px;
+}
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.aboutfirstlinepad {
+  padding-top: 22px;
+}
+
+.text-white {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.about-me span {
+  color: rgb(240, 246, 247);
+  border-bottom: 2px solid rgb(252, 220, 56);
+  padding-bottom: 6px;
+}
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: rgb(240, 246, 247);
+}
+
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.about-me .content ul li {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.about-me .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: rgb(252, 220, 56);
+}
+
+.about-me .content p:last-child {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.about-me img {
+  border: 1.5px solid rgb(252, 220, 56);
+  width: 100%;
+}
+
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+  background-color: rgb(199, 97, 97);
+}
+
+.skills .progress .skill {
+  padding: 15;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.15);
+}
+.skills .progress-bar {
+  /* width: 125px; */
+  height: 10px;
+  transition: 0.9s;
+  background-color: rgb(240, 246, 247);
+}
+.progresspadd {
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+
+/*Interests*/
+
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+
+.social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a:hover {
+  background: rgb(144, 237, 240);
+}

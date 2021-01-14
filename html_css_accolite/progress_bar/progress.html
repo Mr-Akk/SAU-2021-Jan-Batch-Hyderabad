@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress bar</title>
+    <style>
+        *{
+            background-color: rgb(253, 244, 244);
+        }
+        .container{
+            width: 90%;
+            height: 70vh;
+            margin: 0 auto;
+            border: 1px solid olive;
+            box-shadow: 10px 10px rgb(26, 25, 25);
+        }
+        h1{
+            text-align: center;
+        }
+        #progress_bar{
+            margin: 0 4rem;
+            height: 30px;
+            border: 2px solid rgb(37, 36, 36);
+            animation-name: animate_progressbar;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+                }
+
+        @keyframes animate_progressbar {
+            0%{
+                    background-color: red;
+                    width: 0px;
+                }
+                25%{
+                    background-color: yellow;
+                    width: 25px;
+                }
+                50%{
+                    background-color:greenyellow;
+                    width: 50px;
+                }
+                75%{
+                    background-color: orangered;
+                    width: 100px;
+                }
+                100%{
+                     background-color: black;
+                    width: 200px;
+                }
+                }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Animated Progress Bar</h1>
+<div id="progress_bar"></div>
+    </div>
+</body>
+</html>
