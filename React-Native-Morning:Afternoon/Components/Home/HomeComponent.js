@@ -5,7 +5,7 @@ import { StyleSheet, View, ScrollView, FlatList } from "react-native";
 
 import MovieList from "../MovieList/MovieList";
 import Spinner from "../Shared/Spinner/Spinner";
-import Button from "../Shared/BUtoon/Button";
+import Button from "../Shared/Button/Button";
 
 export default class HomeComponent extends Component {
   constructor(props) {
