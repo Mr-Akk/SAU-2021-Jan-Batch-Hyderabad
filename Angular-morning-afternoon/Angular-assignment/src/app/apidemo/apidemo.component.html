@@ -1,0 +1,30 @@
+<div class="container">
+  <button (click)="onGetData()" class="btn btn-primary">
+    Get data
+  </button>
+
+  <div *ngIf="userArr.length > 0">
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th id="id">Id</th>
+          <th id="name">Name</th>
+          <th id="email">email</th>
+          <th id="phonenumber"> phonenumber</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of userArr">
+
+          <td>{{i.id}}</td>
+          <td>{{i.name | lowercase}}</td>
+          <td>{{i.email }}</td>
+          <td>{{i.phonenumber}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>

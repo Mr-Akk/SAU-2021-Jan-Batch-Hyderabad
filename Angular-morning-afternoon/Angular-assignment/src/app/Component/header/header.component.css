@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: rgba(224, 204, 226, 0.74);
+  height: 60px;
+  position: relative;
+  border: 1px solid rgba(223, 185, 185, 0.795);
+}
+.navbar div {
+  padding: 5px;
+}
+
+.navbar-collapse a {
+  margin: 1rem 2rem;
+  font-size: 1.4em;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navbar-collapse a:hover {
+  background-color: rgb(232, 236, 240);
+  border: 1px solid gray;
+  border-radius: 10px 10px;
+}
+
+.navbar-nav {
+  text-align: center;
+
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.active {
+  background-color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 10px 10px;
+}

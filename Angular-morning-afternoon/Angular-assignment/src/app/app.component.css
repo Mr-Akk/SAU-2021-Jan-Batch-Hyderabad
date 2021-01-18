@@ -1,0 +1,7 @@
+.calculator_button button {
+  padding: 4px 10px;
+  font-size: 3rem;
+  margin: 2rem;
+  background-color: rgb(237, 242, 247);
+  border: 2px solid green;
+}
