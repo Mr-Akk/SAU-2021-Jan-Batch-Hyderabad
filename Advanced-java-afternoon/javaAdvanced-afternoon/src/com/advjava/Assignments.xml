@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<assignments>
+    <assignment id="1">
+        <name>advanced_java</name>
+        <status>Finished</status>
+        <language>Java</language>
+    </assignment>
+    <assignment id="2">
+        <name>Python_fundamentals</name>
+        <status>in progress</status>
+        <language>Python</language>
+    </assignment>
+    <assignment id="3">
+        <name>Basics_of_Javascript</name>
+        <status>Completed</status>
+        <language>Javascript</language>
+    </assignment>
+    <assignment id="4">
+        <name>Spring_Framework</name>
+        <status>nearly completed</status>
+        <language>Java</language>
+    </assignment>
+    <assignment id="5">
+        <name>React</name>
+        <status>Completed</status>
+        <language>Javascript</language>
+    </assignment>
+</assignments>
