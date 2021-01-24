@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:12:59:06 +0530] "GET /assignment HTTP/1.1" 302 - http-bio-9000-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:12:59:06 +0530] "GET /assignment/ HTTP/1.1" 200 243 http-bio-9000-exec-3 470
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:12:59:06 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-9000-exec-4 0
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:12:59:22 +0530] "GET /assignment/basic? HTTP/1.1" 200 22 http-bio-9000-exec-5 1
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:13:02:26 +0530] "GET /assignment/basic? HTTP/1.1" 200 22 http-bio-9000-exec-1 28
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:13:50:15 +0530] "GET /assignment/ HTTP/1.1" 200 243 http-bio-9000-exec-1 457
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:13:50:16 +0530] "GET /assignment/basic? HTTP/1.1" 200 22 http-bio-9000-exec-3 1
