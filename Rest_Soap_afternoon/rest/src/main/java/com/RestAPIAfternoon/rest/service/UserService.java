@@ -13,5 +13,7 @@ public interface UserService {
 	Optional<Object> deleteUserById(Integer id);
 	
 	User updateUserPasswordById(Integer id , User user);
+	
+	public Object getMyMessage(User user);
 }
 

@@ -30,6 +30,7 @@ public class PrivateMessageServiceImpl implements PrivateMessageService {
 		return privateMessageRepository.save(privateMessage);
 	}
 
+	@Override
 	public PrivateMessage addMessage(PrivateMessage privateMessage , Integer id) {
 		
 		User user = userServiceImpl.getUserById(id);

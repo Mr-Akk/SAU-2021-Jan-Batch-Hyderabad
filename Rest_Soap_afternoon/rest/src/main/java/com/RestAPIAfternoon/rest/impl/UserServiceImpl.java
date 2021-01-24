@@ -76,7 +76,7 @@ public class UserServiceImpl implements UserService{
 		
 	}
 
-
+	@Override
 	public Object getMyMessage(User user) {
 		
 		User u = getUserById(user.getId());
