@@ -1,6 +1,7 @@
 package com.accolite.ordermanager.impl;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,8 +16,6 @@ import com.accolite.ordermanager.entity.UserCart;
 import com.accolite.ordermanager.repo.CartRepo;
 import com.accolite.ordermanager.service.CartService;
 import com.accolite.ordermanager.shared.Calculation;
-
-import net.bytebuddy.asm.Advice.Return;
 
 @Service
 public class CartServiceimpl implements CartService{
@@ -49,7 +48,6 @@ public class CartServiceimpl implements CartService{
 		return purchasedProductList;
 	}
 
-
 	public PurchasedProduct addProduct(Integer cartId, Integer prodId, Integer quantity) {		
 		UserCart userCart = getCartById(cartId);
 		Product product = psimpl.getProductById(prodId);		
@@ -60,7 +58,6 @@ public class CartServiceimpl implements CartService{
 			cRepo.save(userCart);			
 			return p;		
 	}
-
 
 	public void deleteProdFromCart(Integer cartId, Integer purchaedProdId) {
 		
@@ -92,5 +89,4 @@ public class CartServiceimpl implements CartService{
 		if (p.size()>0) { return p.get(0);}
 		return  null;		
 	}
-
 }

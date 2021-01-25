@@ -7,7 +7,6 @@ import com.accolite.ordermanager.entity.Product;
 import com.accolite.ordermanager.repo.ProductRepo;
 import com.accolite.ordermanager.service.ProductService;
 
-
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -19,10 +18,7 @@ public class ProductServiceImpl implements ProductService {
 		return pRepo.save(p);
 	}
 	
-	
 	public Product getProductById(int id) {
 		return pRepo.findById(id).get();
-	}
-	
-	
+	}	
 }

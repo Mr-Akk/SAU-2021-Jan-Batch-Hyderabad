@@ -15,10 +15,7 @@ public class Calculation implements CalculationService {
 	@Autowired
 	ProductServiceImpl psimpl;
 	
-	public long calculatePrice(Product prod, Integer quantity) {
-		
-		
+	public long calculatePrice(Product prod, Integer quantity) {	
 		return quantity*prod.getPrice();	
-		}
-
+	}
 }

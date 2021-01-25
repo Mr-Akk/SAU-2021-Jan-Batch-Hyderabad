@@ -8,7 +8,6 @@ import javax.persistence.OneToOne;
 
 @Entity
 public class OrderFinal {
-
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,45 +16,28 @@ public class OrderFinal {
 	@OneToOne
 	private UserCart placedorder;
 	
-	
-
 	public OrderFinal() {
 		super();
 	}
-
-
 
 	public OrderFinal(UserCart placedorder) {
 		super();
 		this.placedorder = placedorder;
 	}
 
-
-
 	public int getOrderid() {
 		return orderid;
 	}
-
-
 
 	public void setOrderid(int orderid) {
 		this.orderid = orderid;
 	}
 
-
-
 	public UserCart getPlacedorder() {
 		return placedorder;
 	}
 
-
-
 	public void setPlacedorder(UserCart placedorder) {
 		this.placedorder = placedorder;
-	}
-	
-	
-	
-	
-	
+	}	
 }

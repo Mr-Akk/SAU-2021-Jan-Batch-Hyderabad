@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+
+import com.sun.istack.NotNull;
 
 @Entity
 public class Product {
@@ -12,19 +15,15 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
+	@NotBlank(message = " Name is necessary for the product!! ")
 	private String name;
 	
+	@NotNull
 	private long price;
 
-	
-	
-	
 	public Product() {
 		super();
 	}
-
-
-
 
 	public Product(String name, long price) {
 		super();
@@ -32,48 +31,27 @@ public class Product {
 		this.price = price;
 	}
 
-
-
-
 	public int getId() {
 		return id;
 	}
-
-
-
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
-
-
 	public String getName() {
 		return name;
 	}
-
-
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
-
-
 	public long getPrice() {
 		return price;
 	}
 
-
-
-
 	public void setPrice(long price) {
 		this.price = price;
 	}
-	
-	
-	
 }

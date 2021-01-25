@@ -22,16 +22,10 @@ public class OrderServiceImpl implements OrderService {
 	
 	public Optional placeOrder(Integer cartId) {
 		
-		UserCart placedOrder = csimpl.getCartById(cartId);
-		
-		if(placedOrder == null) {return Optional.empty();}
-			
+		UserCart placedOrder = csimpl.getCartById(cartId);	
+		if(placedOrder == null) {return Optional.empty();}		
 			OrderFinal orderFinal = new OrderFinal(placedOrder);
-			oRepo.save(orderFinal);
-			
-			return Optional.of("Order Placed!");
-		
-		
+			oRepo.save(orderFinal);		
+			return Optional.of("Order Placed!");	
 	}
-
 }

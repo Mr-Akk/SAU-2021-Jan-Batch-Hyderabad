@@ -1,8 +1,10 @@
 package com.accolite.ordermanager.controller;
 
+import javax.validation.Valid;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,12 +21,8 @@ public class Customercontroller {
 	CustomerServiceImpl csimpl;
 	
 	@PostMapping("/add")
-	public ResponseEntity<Object> addCustomer(@RequestBody Customer customer) {
-		
-		 Customer createdCustomer = csimpl.createCustomer(customer);
-		
-		return ResponseEntity.ok(createdCustomer);
-		
+	public ResponseEntity<Object> addCustomer(@Valid @RequestBody Customer customer) {		
+		 Customer createdCustomer = csimpl.createCustomer(customer);		
+		return ResponseEntity.ok(createdCustomer);		
 	}
-
 }

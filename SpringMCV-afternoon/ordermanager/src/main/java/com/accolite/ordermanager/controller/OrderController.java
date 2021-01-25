@@ -20,14 +20,11 @@ public class OrderController {
 	OrderServiceImpl osimpl;
 	
 	@GetMapping("/{cartId}")
-	public ResponseEntity<Object> placeorder(@PathVariable("cartId") Integer cartId) {
-		
+	public ResponseEntity<Object> placeorder(@PathVariable("cartId") Integer cartId) {		
 		Optional placeOrder = osimpl.placeOrder(cartId);
 		if(placeOrder.isPresent()) {
 			return ResponseEntity.ok("Order Placed!!");
 		}
-		return new ResponseEntity<Object>("Invalid order!!" , HttpStatus.NOT_FOUND);
-		
+		return new ResponseEntity<Object>("Invalid order!!" , HttpStatus.NOT_FOUND);	
 	}
-
 }

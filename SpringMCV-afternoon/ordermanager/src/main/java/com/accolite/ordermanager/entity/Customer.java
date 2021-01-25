@@ -1,10 +1,14 @@
 package com.accolite.ordermanager.entity;
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Size;
+
+import com.sun.istack.NotNull;
 
 @Entity
 public class Customer {
@@ -13,29 +17,32 @@ public class Customer {
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	private int id;
 	
+	@NotNull
+	@Size(min = 2,message = "First name should be minimum of two letters")
 	private String name;
 	
+	@Email
+	@NotNull
 	private String emailId;
 	
+	@NotNull
 	private String houseNo;
 	
+	@NotNull
 	private String street;
 	
+	@NotNull
 	private String city;
 	
+	@NotNull
 	private String country;
 	
+	@NotNull
 	private String pincode;
 	
-	
-
 	public Customer() {
 		super();
 	}
-
-	
-	
-
 
 	public Customer(String name, String emailId, String houseNo, String street, String city, String country,
 			String pincode) {
@@ -48,10 +55,6 @@ public class Customer {
 		this.country = country;
 		this.pincode = pincode;
 	}
-
-
-
-
 
 	public int getId() {
 		return id;
@@ -69,102 +72,51 @@ public class Customer {
 		this.name = name;
 	}
 
-
 	public String getEmailId() {
 		return emailId;
 	}
-
 
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
 
-
-
-
-
 	public String getHouseNo() {
 		return houseNo;
 	}
-
-
-
-
 
 	public void setHouseNo(String houseNo) {
 		this.houseNo = houseNo;
 	}
 
-
-
-
-
 	public String getStreet() {
 		return street;
 	}
-
-
-
-
 
 	public void setStreet(String street) {
 		this.street = street;
 	}
 
-
-
-
-
 	public String getCity() {
 		return city;
 	}
-
-
-
-
 
 	public void setCity(String city) {
 		this.city = city;
 	}
 
-
-
-
-
 	public String getCountry() {
 		return country;
 	}
-
-
-
-
 
 	public void setCountry(String country) {
 		this.country = country;
 	}
 
-
-
-
-
 	public String getPincode() {
 		return pincode;
 	}
 
-
-
-
-
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
-
-
-
-	
-
-	
-	
-	
-
 }

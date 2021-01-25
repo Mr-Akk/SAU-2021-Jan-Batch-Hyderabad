@@ -2,16 +2,10 @@ package com.accolite.ordermanager.dao;
 
 import javax.persistence.Embeddable;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.accolite.ordermanager.shared.Calculation;
-
 
 @Embeddable
 public class PurchasedProduct {
 	
-
-
 	static int idCount = 0;
 	
 	private int id;
@@ -65,9 +59,5 @@ public class PurchasedProduct {
 	public void setTotalPrice(long totalPrice) {
 		this.totalPrice = totalPrice;
 	}
-
-	
-	
-	
-	
+		
 }

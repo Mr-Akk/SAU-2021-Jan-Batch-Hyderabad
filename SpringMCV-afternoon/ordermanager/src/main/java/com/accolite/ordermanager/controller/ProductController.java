@@ -1,5 +1,8 @@
 package com.accolite.ordermanager.controller;
 
+import javax.validation.Valid;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +25,7 @@ public class ProductController {
 	ProductServiceImpl psimpl;
 	
 	@PostMapping("/add")
-	public ResponseEntity<Object> addProduct(@RequestBody Product product) {		
+	public ResponseEntity<Object> addProduct(@Valid @RequestBody Product product) {		
 		Product newProduct = psimpl.addNewProduct(product);		
 		return ResponseEntity.ok(newProduct);		
 	}

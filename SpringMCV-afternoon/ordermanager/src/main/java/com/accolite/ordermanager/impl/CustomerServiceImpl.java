@@ -15,12 +15,6 @@ public class CustomerServiceImpl implements CustomerService {
 
 	public Customer createCustomer(Customer customer) {
 		
-		return cRepo.save(customer);
-		
+		return cRepo.save(customer);		
 	}
-	
-	
-	
-	
-
 }
