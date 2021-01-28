@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.ordermanager.impl.OrderServiceImpl;
+import com.accolite.ordermanager.service.OrderService;
 
 @RestController
 @RequestMapping("/order")
 public class OrderController {
 	
 	@Autowired
-	OrderServiceImpl osimpl;
+	OrderService osimpl;
 	
 	@GetMapping("/{cartId}")
 	public ResponseEntity<Object> placeorder(@PathVariable("cartId") Integer cartId) {		

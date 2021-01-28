@@ -16,13 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.accolite.ordermanager.dao.PurchasedProduct;
 import com.accolite.ordermanager.entity.UserCart;
 import com.accolite.ordermanager.impl.CartServiceimpl;
+import com.accolite.ordermanager.service.CartService;
 
 @RestController
 @RequestMapping("/cart")
 public class CartController {
 	
 	@Autowired
-	CartServiceimpl csimpl;
+	CartService csimpl;
 	
 	@GetMapping("/create/{cusId}")
 	public int createCart(@PathVariable("cusId") Integer cusId) {

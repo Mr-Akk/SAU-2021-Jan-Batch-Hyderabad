@@ -12,13 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.ordermanager.entity.Customer;
 import com.accolite.ordermanager.impl.CustomerServiceImpl;
+import com.accolite.ordermanager.service.CustomerService;
 
 @RestController
 @RequestMapping("/customer")
 public class Customercontroller {
 	
 	@Autowired
-	CustomerServiceImpl csimpl;
+	CustomerService csimpl;
 	
 	@PostMapping("/add")
 	public ResponseEntity<Object> addCustomer(@Valid @RequestBody Customer customer) {		

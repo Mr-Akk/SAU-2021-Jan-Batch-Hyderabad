@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.ordermanager.entity.Product;
 import com.accolite.ordermanager.impl.ProductServiceImpl;
+import com.accolite.ordermanager.service.ProductService;
 
 @RestController
 @RequestMapping("/product")
@@ -22,7 +23,7 @@ public class ProductController {
 	
 	
 	@Autowired
-	ProductServiceImpl psimpl;
+	ProductService psimpl;
 	
 	@PostMapping("/add")
 	public ResponseEntity<Object> addProduct(@Valid @RequestBody Product product) {		
