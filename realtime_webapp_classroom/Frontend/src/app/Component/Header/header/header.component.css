@@ -1,0 +1,19 @@
+.navbar {
+  background-color: antiquewhite;
+  font-size: 20px;
+}
+
+.navbar ul {
+  align-items: center;
+  padding: 1rem;
+
+  list-style-type: none;
+}
+
+.navbar ul li {
+  padding: 1rem 1rem;
+}
+
+.navbar div ul li a {
+  color: black;
+}
